@@ -11,9 +11,10 @@ def handle(msg):
         bot.sendMessage(chat_id, "코로나 알림")
       else:
         pass
-
-MessageLoop('1443319953:AAFZ5x4bLbCh0CYeeSNlDvwOevxXhIBnxu4', handle).run_as_thread()
-
+      
+bot = telepot.Bot('1443319953:AAFZ5x4bLbCh0CYeeSNlDvwOevxXhIBnxu4')
+MessageLoop(bot, handle).run_as_thread()
+print('Listening ...')
 
 # Keep the program running.
 while True:
