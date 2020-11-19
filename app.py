@@ -17,14 +17,6 @@ def handle(msg):
             bot.sendMessage(chat_id, "점심 메뉴")
         else:
             pass
-
-      
-bot = telepot.Bot('1443319953:AAFZ5x4bLbCh0CYeeSNlDvwOevxXhIBnxu4')
-MessageLoop(bot, handle).run_as_thread()
-
-# Keep the program running.
-while True:
-    time.sleep(1000)
     
 
 def template(data):
