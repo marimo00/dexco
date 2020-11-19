@@ -12,9 +12,8 @@ def handle(msg):
       else:
         pass
 
-bot = telepot.Bot(TOKEN)
 MessageLoop(bot, handle).run_as_thread()
-print('Listening ...')
+
 
 # Keep the program running.
 while True:
