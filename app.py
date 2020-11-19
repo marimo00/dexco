@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 from noti import send
 from table import print_table
 from telepot.loop import MessageLoop
+import time
+import telepot
 
 def handle(msg):
     
@@ -19,7 +21,6 @@ def handle(msg):
       
 bot = telepot.Bot('1443319953:AAFZ5x4bLbCh0CYeeSNlDvwOevxXhIBnxu4')
 MessageLoop(bot, handle).run_as_thread()
-print('Listening ...')
 
 # Keep the program running.
 while True:
