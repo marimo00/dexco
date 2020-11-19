@@ -11,6 +11,14 @@ def handle(msg):
         bot.sendMessage(chat_id, "코로나 알림")
       else:
         pass
+
+bot = telepot.Bot(TOKEN)
+MessageLoop(bot, handle).run_as_thread()
+print('Listening ...')
+
+# Keep the program running.
+while True:
+    time.sleep(1000)
     
 
 def template(data):
