@@ -5,12 +5,17 @@ from table import print_table
 from telepot.loop import MessageLoop
 
 def handle(msg):
-  content_type, chat_type, chat_id = telepot.glance(msg)
+    
+
+    content_type, chat_type, chat_id = telepot.glance(msg)
+
+
     if content_type == 'text':
-      if msg['text'].upper() == '점심':
-        bot.sendMessage(chat_id, "코로나 알림")
-      else:
-        pass
+        if msg['text'].upper() == '점심':
+            bot.sendMessage(chat_id, "점심 메뉴")
+        else:
+            pass
+
       
 bot = telepot.Bot('1443319953:AAFZ5x4bLbCh0CYeeSNlDvwOevxXhIBnxu4')
 MessageLoop(bot, handle).run_as_thread()
