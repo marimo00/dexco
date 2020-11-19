@@ -12,7 +12,7 @@ def handle(msg):
       else:
         pass
 
-MessageLoop(bot, handle).run_as_thread()
+MessageLoop('1443319953:AAFZ5x4bLbCh0CYeeSNlDvwOevxXhIBnxu4', handle).run_as_thread()
 
 
 # Keep the program running.
