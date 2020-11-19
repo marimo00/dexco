@@ -2,6 +2,16 @@ import requests as rq
 from bs4 import BeautifulSoup
 from noti import send
 from table import print_table
+from telepot.loop import MessageLoop
+
+def handle(msg):
+  content_type, chat_type, chat_id = telepot.glance(msg)
+    if content_type == 'text':
+      if msg['text'].upper() == '점심':
+        bot.sendMessage(chat_id, "코로나 알림")
+      else:
+        pass
+    
 
 def template(data):
   '''
